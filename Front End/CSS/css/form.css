@@ -1,0 +1,37 @@
+form{
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-left: 358px;
+    margin-top: 158px;
+    text-align: center;
+    background-image: url("C:/Users/Admin/Desktop/CSS/image/giphy.gif");
+    font-size: 20px;
+    color: black;
+    box-shadow:0 0 20px green;
+    font-family: cursive;
+}
+input[type="text"],input[type="password"]{
+    width: 200px;
+    height: 23px;
+    border: 1px solid red;
+    border-radius: 50px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+}
+input[type="submit"]{
+    border: 1px solid red;
+    padding: 5px 20px;
+    border-radius: 25px;
+    outline: none;
+
+}
+input[type="submit"]:hover{
+    background-color: green;
+}
+body{
+    background-image: url("C:/Users/Admin/Desktop/CSS/image/img1.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,18 @@
+button1
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+button1:hover
+{
+    
+    background-color:black;
+    color: white;
+    
+}
+button2:hover
+{
+    background-color: blue;
+    color: white;
+}

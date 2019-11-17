@@ -1,0 +1,17 @@
+img{
+    height: 300px;
+    width: 300px;
+    padding: 13px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

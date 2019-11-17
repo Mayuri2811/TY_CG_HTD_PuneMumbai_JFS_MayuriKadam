@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+       
+       
+       <!-- by reference -->
+       <bean id="mobile" class="com.capgemini.springcore.beans.Mobile">
+        <property name="brandName" value="Samsung"/>
+        <property name="modelName" value="A8"></property>
+        <property name="price" value="20000"></property>
+        <property name="mobileDisplay" ref="dis"></property>
+        </bean>
+        
+        <bean id="dis" class="com.capgemini.springcore.beans.MobileDisplay">
+        <property name="displaySize" value="7.5"></property>
+         <property name="resolution" value="300"></property>
+        </bean>
+        
+        
+        
+       <!--  autowire-bytype -->
+         <!-- <bean id="mobile" class="com.capgemini.springcore.beans.Mobile" autowire="byType">
+        <property name="brandName" value="Samsung"/>
+        <property name="modelName" value="A8"></property>
+        <property name="price" value="20000"></property>
+       
+        </bean> 
+        <bean id="dis" class="com.capgemini.springcore.beans.MobileDisplay">
+        <property name="displaySize" value="7.5"></property>
+         <property name="resolution" value="300"></property>
+        </bean> -->
+        
+        
+       <!--  autowire-byName -->
+        <!-- <bean id="mobile" class="com.capgemini.springcore.beans.Mobile" autowire="byName">
+        <property name="brandName" value="Samsung"/>
+        <property name="modelName" value="A8"></property>
+        <property name="price" value="20000"></property>
+      
+        </bean>
+        
+        <bean id="mobileDisplay" class="com.capgemini.springcore.beans.MobileDisplay">
+        <property name="displaySize" value="7.5"></property>
+         <property name="resolution" value="300"></property>
+        </bean> -->
+        </beans>
